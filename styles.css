@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.form-container {
+    flex: 1; /* Allow the form to take up available space */
+    margin-right: 20px; /* Space between form and PDF viewer */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-viewer {
+    flex: 1; /* Allow the PDF viewer to take up available space */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #343a40;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #495057;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0069d9;
+}
+
+#pdf-canvas {
+    width: 100%;
+    height: auto; /* Adjust height automatically */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+#pdf-viewer button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#pdf-viewer button:hover {
+    background-color: #0069d9;
+    color: white;
+}
+
+#page-num, #page-count {
+    font-weight: bold;
+}
